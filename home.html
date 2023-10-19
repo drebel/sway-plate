@@ -4,61 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Measure Balance Objectively Online | SwayPlate</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/base.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/components.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/utilities.css"
+  />
 </head>
-<body>
-    <section id="hero">
-        <h1>Objectively Measure Balance Online for Free</h1>
-        <p>Connect your Wii Balance Board and get center of pressure data</p>
-        <a>Connect Wii Balance Board</a>
+
+<body class="bg-gray-900">
+    <section class="py-20 text-center text-white">
+      <h1 class="text-6xl">Measure Balance</h1>
+      <h2 class="text-xl my-3">
+        Center of Pressure Data on the Web
+      </h2>
+      <div class="mt-8 pt-6">
+        <a href="index.html" class=" py-4 px-6 capitalize bg-blue-600 dark:bg-gray-800 text-white rounded hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700 text-xl">Get Started!</a>
+      </div>
+
     </section>
-    <section id="video"></section>
-    <section id="explainer">
-        <p>SwayPlate was designed as a way for users to collect objective balance data in hopes of improving health outcomes and physical performance</p>
-    </section>
-    <section id="features">
-        <section>
-            <div></div>
-            <div>
-                <h2>Use your own Wii Balance Board</h2>
-                <p>Nintendo's Wii Balance Board has been validated as a low cost, portable force plate in multiple research studies</p>
-                <p>See if a friend of family has an old Wii Balance Board or look around at local thrift stores</p>
+
+    <!-- <section id="heroPic" class="max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <img src="demo.png" alt="">
+    </section> -->
+    <!-- <section id="explainer" class="max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <p class="my-2">SwayPlate was designed so users could collect objective balance data in hopes of improving health outcomes and physical performance</p>
+    </section> -->
+    <section id="features" class="max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md mb-4">
+        <section class="flex flex-row-reverse mb-8 pb-8">
+            <div class="w-1/2">
+                <img src="Wii_Balance_Board_transparent.png" alt="" >
+            </div>
+            <div class="w-1/2">
+                <h2 class="my-4 font-big font-bold  text-3xl">Use your own Wii Balance Board</h2>
+                <p class="my-2">Nintendo's Wii Balance Board has been validated as a low cost, portable force plate in multiple research studies</p>
+                <p class="my-2">See if a friend of family has an old Wii Balance Board or look around at local thrift stores</p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div>
-                <h2>See center of pressure data live</h2>
-                <p>Use the live data feed for biofeedback or just to see how it works in real time</p>
+        <section class="flex my-8 py-8">
+            <div class="w-1/2">
+                <img src="liveData.png" alt="" class="">
+            </div>
+            <div class="w-1/2">
+                <h2 class="my-4 font-big font-bold  text-3xl">Live CoP data</h2>
+                <p class="my-2">Use the live data feed for biofeedback or just to see how it works in real time</p>
                 <p></p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div>
-                <h2>Record balance data</h2>
-                <p>Stop recording data manually or set a timer to automatically stop the recording</p>
-                <p>Live data plotting is turned off during recordings to optimze the performance</p>
+        <section class="flex flex-row-reverse my-8 py-8">
+            <div class="w-1/2">
+                <img src="record.png" alt="">
+            </div>
+            <div class="w-1/2">
+                <h2 class="my-4 font-big font-bold  text-3xl">Record balance data</h2>
+                <p class="my-2">Stop recording data manually or set a timer to automatically stop the recording</p>
+                <p class="my-2">Live data plotting is turned off during recordings to optimze the performance</p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div>
-                <h2>Analyze balance data</h2>
-                <p>Get stats about your recording such as recording duration and total path length</p>
+        <section class="flex my-8 py-8">
+            <div class="w-1/2">
+                <img src="analyze.png" alt="" class="">
+            </div>
+            <div class="w-1/2">
+                <h2 class="my-4 font-big font-bold  text-3xl">Analyze balance data</h2>
+                <p class="my-2">Get stats about your recording such as Recording Duration and Total Path Length</p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div>
-                <h2>Download your raw and filtered data</h2>
-                <p>The Wii Balance Board samples data at a variable rate as described by Dr </p>
-                <p>You can download your data as a CSV so you can perform your own analysis</p>
+        <section class="flex flex-row-reverse my-8 py-8">
+            <div class="w-1/2">
+                <img src="raw.png" alt="">
+            </div>
+            <div class="w-1/2">
+                <h2 class="my-4 font-big font-bold  text-3xl">Download your raw and filtered data</h2>
+                <p class="my-2">The Wii Balance Board samples data at a variable rate as described by Dr. Audifferen </p>
+                <p class="my-2">You can download your data as a CSV so you can perform your own analysis</p>
             </div>
         </section>
     </section>
-    <section id="usecases"></section>
+    <!-- <section id="usecases"></section>
     <section id="faq"></section>
-    <section id="devNotes"></section>
+    <section id="devNotes"></section> -->
 </body>
 </html>

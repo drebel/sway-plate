@@ -24,20 +24,62 @@
      charset="utf-8"></script> -->
 
   </head>
-  <body class="bg-gray-200">
-    <div class="py-20 text-center text-black">
-      <h1 class="text-4xl">Measure Balance</h1>
-      <h2>
-        Center of Pressure Data on the web
+  <body class="bg-gray-900">
+    <div class="py-20 text-center text-white">
+      <h1 class="text-6xl">Measure Balance</h1>
+      <h2 class="text-xl my-3">
+        Center of Pressure Data on the Web
       </h2>
     </div>
 
+    <!-- <section id="features" class="max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+      <section>
+          <div></div>
+          <div>
+              <h2 class="my-4 font-big text-bold  text-3xl">Use your own Wii Balance Board</h2>
+              <p class="my-2">Nintendo's Wii Balance Board has been validated as a low cost, portable force plate in multiple research studies</p>
+              <p class="my-2">See if a friend of family has an old Wii Balance Board or look around at local thrift stores</p>
+          </div>
+      </section>
+      <section>
+          <div></div>
+          <div>
+              <h2 class="my-4 font-big text-bold  text-3xl">See center of pressure data live</h2>
+              <p class="my-2">Use the live data feed for biofeedback or just to see how it works in real time</p>
+              <p></p>
+          </div>
+      </section>
+      <section>
+          <div></div>
+          <div>
+              <h2 class="my-4 font-big text-bold  text-3xl">Record balance data</h2>
+              <p class="my-2">Stop recording data manually or set a timer to automatically stop the recording</p>
+              <p class="my-2">Live data plotting is turned off during recordings to optimze the performance</p>
+          </div>
+      </section>
+      <section>
+          <div></div>
+          <div>
+              <h2 class="my-4 font-big text-bold  text-3xl">Analyze balance data</h2>
+              <p class="my-2">Get stats about your recording such as Recording Duration and Total Path Length</p>
+          </div>
+      </section>
+      <section>
+          <div></div>
+          <div>
+              <h2 class="my-4 font-big text-bold  text-3xl">Download your raw and filtered data</h2>
+              <p class="my-2">The Wii Balance Board samples data at a variable rate as described by Dr. Audifferen </p>
+              <p class="my-2">You can download your data as a CSV so you can perform your own analysis</p>
+          </div>
+      </section>
+  </section> -->
+
     <div
       id="instructions"
-      class="max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md"
+      class="mt-2 max-w-4xl mx-auto px-8 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md"
     >
       <h1 class="my-4 font-big text-bold  text-3xl">Step 1 - Enable bluetooth API on your browser</h1>
-      <ol class="my-2">
+      <ol class="my-2 list-disc list-inside">
         <li>Open this site in a Chrome or Edge browser</li>
         <li>If you are using Edge skip to Step 2. If you are using Chrome continue with Step 1</li>
         <li>Enter <code>chrome://flags</code> into your URL bar</li>
@@ -47,15 +89,23 @@
       </ol>
 
       <h1 class="my-4 font-big text-bold text-3xl">Step 2 - Connect your Wii Balance Board to your computer</h1>
-      <ol class="my-2">
-        <li>Open a new finder window and go to <code>Control Panel\Hardware and Sound\Devices and Printers</code><br>
-          I usually get here by going to add a bluetooth device, scrolling down and then clicking <code>Devices and Printers</code><br>
-          Pairing the board the normal way you connect bluetooth devices will not work</li>
+
+      <p class="my-2 font-bold">On Windows: </p>
+      <ol class="my-2 list-disc list-inside">
+        <li>Open a new finder window and go to: <code>Control Panel\Hardware and Sound\Devices and Printers</code><br>
+          Alternatively you can go to add a bluetooth device, scrolling down and then clicking <code>Devices and Printers</code><br>
+          Pairing the board the normal way you connect bluetooth devices WILL NOT WORK</li>
         <li>In the Devices and Printers window, Click <code>Add a Device</code> </li>
         <li>On your Wii Balance board, push the red button inside the battery pannel</li>
-        <li>The board my appear as unnamed input device or named something like Nintendo RVL-WBC-01</li>
+        <li>The board may appear as unnamed input device or named something like Nintendo RVL-WBC-01</li>
         <li>You will be asked for a pin. Just click Next without entering anything. Do not click into the input box otherwise you will not be able to click Next.</li>
       </ol>
+
+      <p class="my-2 font-bold">On macOS, iOS, and Android:</p>
+      <p>Currently I have not been able to connect the Wii Balance Board to macs, iPhones or Androids yet. macOS changed something with their bluetooth protocol so it is different than Windows. If you figure out how to connect to any of these, please let me know!</p>
+
+      <p class="my-2 font-bold">On Linux:</p>
+      <p>Should be able to connect as a regular bluetooth device</p>
 
       <h1 class="my-4 font-big text-bold text-3xl">Step 3 - Connect your Wii Balance Board to your browser</h1>
       <ol class="my-2">
@@ -160,7 +210,7 @@
       >
         <!-- <h1 class="my-4 font-big text-bold underline text-3xl">Stats</h1> -->
         <table>
-          <thead>Recording Stats</thead>
+          <thead>Analysis</thead>
           <tr>
             <th>Time (s)</th>
             <td id="timeCell"></td>

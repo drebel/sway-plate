@@ -236,6 +236,7 @@ function enableControls() {
   document.getElementById("canvasholder").classList.remove("hidden")
   document.getElementById("stats").classList.remove("hidden")
   document.getElementById("instructions").classList.add("hidden")
+  // document.getElementById("features").classList.add("hidden")
 }
 
 function arrayToCSV(dataArray, id) {
